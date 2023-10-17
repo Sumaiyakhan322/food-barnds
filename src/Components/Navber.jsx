@@ -18,7 +18,7 @@ isPending ? "pending" : isActive ? "text-red-800" : ""
     return (
         <div>
              <div className="">
-   <div className="navbar p-4 sticky inset-0 z-10  flex flex-col gap-5 md:flex-row justify-between  bg-gradient-to-r from-stone-200 to-red-100">
+   <div className="navbar p-4 sticky inset-0 z-10  flex flex-col gap-5 md:flex-row justify-between">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
