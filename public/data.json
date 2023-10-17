@@ -1,0 +1,26 @@
+[
+    {
+      "brandName": "Coca-Cola",
+      "img": "https://example.com/coca-cola.jpg"
+    },
+    {
+      "brandName": "McDonald's",
+      "img": "https://example.com/mcdonalds.jpg"
+    },
+    {
+      "brandName": "Starbucks",
+      "img": "https://example.com/starbucks.jpg"
+    },
+    {
+      "brandName": "PepsiCo",
+      "img": "https://example.com/pepsico.jpg"
+    },
+    {
+      "brandName": "Nestlé",
+      "img": "https://example.com/nestle.jpg"
+    },
+    {
+      "brandName": "Kellogg's",
+      "img": "https://example.com/kelloggs.jpg"
+    }
+  ]
