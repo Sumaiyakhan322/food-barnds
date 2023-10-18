@@ -70,7 +70,7 @@ const Banner = () => {
 
                 <p className='mb-16 w-full text-lg text-slate-200'>Embark on a culinary journey that spans the globe, brought to you by industry giants like Coca-Cola, McDonald`s, Starbucks, PepsiCo, Nestlé, and Kellogg`s. Taste the best in food and beverage innovation</p>
                 <a className="mb-2 inline-block rounded-full border-2 mb-10 border-red-400 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 md:mr-2 md:mb-0"
-              data-te-ripple-init data-te-ripple-color="light" href="#!" role="button"  >Get up to 20% discount</a>
+              data-te-ripple-init data-te-ripple-color="light" href="" role="button"  >Get up to 20% discount</a>
                </div>
             </div>
           </div>
@@ -93,7 +93,7 @@ const Banner = () => {
 
                 <p className='mb-16 w-full text-lg text-slate-200 '>Discover the classics you love and the latest innovations in the world of food and beverages with brands such as Coca-Cola, McDonald`s, Starbucks, PepsiCo, Nestlé, and Kellogg`s. Join us in celebrating the essence of flavor.</p>
                 <a className=" inline-block rounded-full border-2 border-red-400 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 md:mr-2 md:mb-0"
-              data-te-ripple-init data-te-ripple-color="light" href="#!" role="button"   ><Link to='/blog'>Learn more</Link></a></div>
+              data-te-ripple-init data-te-ripple-color="light" href="#!" role="button"   ><Link to='/myCart'>Learn more</Link></a></div>
                           
             </div>
           </div>

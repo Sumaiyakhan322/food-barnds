@@ -107,15 +107,7 @@ const AllBrandsProducts = () => {
           
           {products.map((pd) => (
           <>
-            {/* <p>All rating:{pd.rating}
-                  <Rating
-                unratedColor="red" ratedColor="red"
-              style={{ maxWidth: 50}}
-              value={parseFloat(pd.rating)}
-              
-             readonly
-            /></p> 
-            <img src={pd.img} alt="" /> */}
+           
 
             <div className="card lg:card-side bg-brown-50-50 shadow-xl  md:h-[360px]">
               <figure className=" md:w-5/12 w-full">
@@ -142,8 +134,8 @@ const AllBrandsProducts = () => {
                 </div>
 
                 <div className="card-actions my-4 ">
-                  <button className=" btn  border-red-900  border hover:border-red-900  text-red-900">Update</button>
-                  <button className="btn    border hover:border-red-900  text-red-900"><Link to={`/details/${pd._id}`}>Details</Link></button>
+               <Link><button className=" btn  border-red-900  border hover:border-red-900  text-red-900">Update</button></Link>   
+                  <Link to={`/details/${pd._id}`}><button className="btn  border hover:border-red-900  text-red-900">Details </button></Link>
                   <button></button>
                 </div>
               </div>
