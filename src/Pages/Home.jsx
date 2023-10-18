@@ -11,7 +11,7 @@ const Home = () => {
         <div>
      <Navber></Navber>
      <Banner></Banner>
-     <div className="max-w-6xl mx-auto my-20">
+     <div className="max-w-6xl mx-auto my-20 p-4 md:p-0">
   
         <h2 className="font-bold text-red-900 text-center text-2xl md:text-5xl  ">Our brands</h2>
         <hr
