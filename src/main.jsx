@@ -30,7 +30,8 @@ const router = createBrowserRouter([
       },{
         path:'/brands/:brandName',
         element:<AllBrandsProducts></AllBrandsProducts>,
-      }
+        loader:()=>fetch('http://localhost:5000/products')
+      },
     ]
   },
 ]);

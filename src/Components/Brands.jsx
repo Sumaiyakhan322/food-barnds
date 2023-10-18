@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 
 const Brands = ({ brands }) => {
+  console.log(brands);
   return (
     <div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 ">
+       
         {brands.map((brand) => (
           <>
           <Link to={`/brands/${brand.brandName}`}>  <div className="border border-red-200 shadow-lg rounded-lg h-full ">
