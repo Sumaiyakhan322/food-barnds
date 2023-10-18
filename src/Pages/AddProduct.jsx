@@ -1,4 +1,6 @@
+import { Navbar } from '@material-tailwind/react';
 import Swal from 'sweetalert2'
+import Navber from '../Components/Navber';
 
 
 const AddProduct = () => {
@@ -39,7 +41,10 @@ const AddProduct = () => {
         
     }
   return (
+    <>
+   <Navber></Navber>
     <div className="max-w-6xl mx-auto md:p-0 p-4">
+     
       <h2 className="font-bold text-red-900 text-center text-2xl md:text-5xl my-10 ">
         Add Products
       </h2>
@@ -126,6 +131,7 @@ const AddProduct = () => {
         </form>
       </div>
     </div>
+    </>
   );
 };
 

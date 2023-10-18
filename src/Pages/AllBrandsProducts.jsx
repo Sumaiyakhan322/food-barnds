@@ -143,7 +143,7 @@ const AllBrandsProducts = () => {
 
                 <div className="card-actions my-4 ">
                   <button className=" btn  border-red-900  border hover:border-red-900  text-red-900">Update</button>
-                  <button className="btn    border hover:border-red-900  text-red-900">Details</button>
+                  <button className="btn    border hover:border-red-900  text-red-900"><Link to={`/details/${pd._id}`}>Details</Link></button>
                   <button></button>
                 </div>
               </div>

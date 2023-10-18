@@ -1,8 +1,18 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from '../assets/logo.png'
-
+import { useContext } from "react";
+import  { AuthContext } from "../Providers/AuthProvider";
 
 const Navber = () => {
+  const {user,SignOutUser}=useContext(AuthContext)
+  console.log(user);
+  const handleSignOut=(e)=>{
+   
+    e.preventDefault();
+    SignOutUser()
+    .then()
+    .catch()
+  }
     const navLinks=<>
     
     <li className="hover:bg-red-200 rounded-lg"><NavLink to='/' className={({ isActive, isPending }) =>
@@ -36,22 +46,22 @@ isPending ? "pending" : isActive ? "text-red-800" : ""
           </ul>
         </div>
         <div className="md:navbar-end mx-auto">
-        {/* {user ? (
+        {user ? (
             <>
              <div className="flex items-center space-x-2">
              <div className="flex items-center space-x-2">
                <p className="font-bold text-lg ">{user?. displayName}</p>
                 <img src={user?.photoURL} alt="" className="md:h-20 md:w-20 h-10 w-10 rounded-full"/>
                </div>
-                <button className="btn text-red-400 text-white hover:bg-white hover:text-red-400 font-bold" onClick={handleSignOut}>SignOut</button>
+                <button className="btn text-black hover:bg-white hover:text-red-400 font-bold border  hover:border-red-400 " onClick={handleSignOut}>SignOut</button>
              </div>
               
             </>
           ) : (
             <Link to="/login">
-              <button className="btn text-red-400 text-white hover:bg-white hover:text-red-400 font-bold">Login</button>
+              <button className="btn text-black border  border-red-400   hover:bg-white hover:text-red-400 font-bold">Login</button>
             </Link>
-          )} */}
+          )}
         
         </div>
       </div>
