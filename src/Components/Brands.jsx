@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 const Brands = ({ brands }) => {
-  console.log(brands);
+ 
   return (
     <div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 ">
@@ -22,7 +22,7 @@ const Brands = ({ brands }) => {
   );
 };
 Brands.propTypes = {
-  brands: PropTypes.object,
+  brands: PropTypes.array,
   };
 
 export default Brands;

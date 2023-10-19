@@ -8,8 +8,10 @@ const GoogleProvider = new GoogleAuthProvider();
 export const AuthContext=createContext(null);
 const AuthProvider = ({children}) => {
     const [user,setUser]=useState(null);
+    
     const [loading,setLoading]=useState(true);
-
+     
+     
 
    //create user 
    const createUser=(email,password)=>{
@@ -32,6 +34,8 @@ const googleSignIn=()=>{
     setLoading(true)
     return signInWithPopup(auth,GoogleProvider)
 }
+
+
 // get the user info by auth changed
  useEffect(()=>{
     const unSubscribe=onAuthStateChanged(auth,currentUser=>{

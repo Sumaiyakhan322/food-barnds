@@ -8,7 +8,7 @@ import { Carousel, Rating } from "@material-tailwind/react";
 const AllBrandsProducts = () => {
   const allBrands = useLoaderData();
   const { brandName } = useParams();
-  console.log(allBrands, brandName);
+  
   const [products, setProducts] = useState([]);
   const [noProduct, setNoProduct] = useState("");
   useEffect(() => {
@@ -21,7 +21,7 @@ const AllBrandsProducts = () => {
       setNoProduct(`There is no product corresponding to the brand `);
     }
   }, [brandName, allBrands]);
-  console.log(products);
+ 
   return (
     <div>
       <div>
@@ -134,7 +134,7 @@ const AllBrandsProducts = () => {
                 </div>
 
                 <div className="card-actions my-4 ">
-               <Link><button className=" btn  border-red-900  border hover:border-red-900  text-red-900">Update</button></Link>   
+               <Link to={`/update/${pd._id}`}><button className=" btn  border-red-900  border hover:border-red-900  text-red-900">Update</button></Link>   
                   <Link to={`/details/${pd._id}`}><button className="btn  border hover:border-red-900  text-red-900">Details </button></Link>
                   <button></button>
                 </div>

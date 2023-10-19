@@ -15,6 +15,8 @@ import Login from './Pages/Login';
 import Register from './Pages/Register';
 import AuthProvider from './Providers/AuthProvider';
 import Details from './Pages/Details';
+import Private from './Private/Private';
+import Update from './Pages/Update';
 
 const router = createBrowserRouter([
   {
@@ -27,10 +29,11 @@ const router = createBrowserRouter([
         loader:()=>fetch('/data.json')
       },{
       path:'/addProduct',
-      element:<AddProduct></AddProduct>
+      element:<Private><AddProduct></AddProduct></Private>
       },{
-        path:'/myCart',
-        element:<MyCart></MyCart>
+        path:'/myCart/:email',
+        element:<Private><MyCart></MyCart></Private>,
+        loader:()=>fetch('http://localhost:5000/usersProducts')
       },{
         path:'/brands/:brandName',
         element:<AllBrandsProducts></AllBrandsProducts>,
@@ -44,8 +47,12 @@ const router = createBrowserRouter([
         element:<Register></Register>
       },{
         path:'/details/:id',
-        element:<Details></Details>,
+        element:<Private><Details></Details></Private>,
         loader:()=>fetch('http://localhost:5000/products')
+      },{
+        path:'/update/:id',
+        element:<Update></Update>,
+        loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
       }
     ]
   },

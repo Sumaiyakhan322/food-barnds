@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import {  useLoaderData, useParams } from "react-router-dom";
 import Navber from "../Components/Navber";
 
 import Swal from 'sweetalert2'
@@ -12,17 +12,19 @@ const Details = () => {
   //get the matched products
     const products=useLoaderData()
     const {id}=useParams()
+    const {user}=useContext(AuthContext);
+   
     const [product,setProduct]=useState({})
     useEffect(()=>{
         const findProduct=products.find(service=>service._id===id)
         setProduct(findProduct)
     },[id,products])
-    const {user}=useContext(AuthContext)
-    const email=user.email;
-const {name,brandName,img,type,price,rating,des}=product
+    
+  const {name,brandName,img,type,price,rating,des}=product
 
   // add product to database
-    const usersAdd={name,brandName,img,type,price,rating,des,email}
+  const email=user.email;
+  const usersAdd={name,brandName,img,type,price,rating,des,email}
     const handleAdd=()=>{
       fetch('http://localhost:5000/usersProducts/',{
         method:'POST',
@@ -38,7 +40,7 @@ const {name,brandName,img,type,price,rating,des}=product
                 Swal.fire({
                     position: 'center',
                     icon: 'success',
-                    title: 'A Product is successfully added',
+                    title: 'A Product is successfully added to cart',
                     showConfirmButton: false,
                     timer: 1500
                   })
@@ -67,7 +69,7 @@ const {name,brandName,img,type,price,rating,des}=product
       <p  className="md:text-2xl text-2xl font-bold my-5">Price:{price}$</p>
       <p className="py-6">{des}</p>
       
-      <button className="btn   md:w-1/5 w-full border hover:border-red-900  text-red-900 rounded-lg border-red-900" onClick={handleAdd}>Add to cart</button>
+     <button className="btn   md:w-1/5 w-full border hover:border-red-900  text-red-900 rounded-lg border-red-900" onClick={handleAdd}>Add to cart</button>
     </div>
   </div>
 

@@ -5,7 +5,9 @@ import  { AuthContext } from "../Providers/AuthProvider";
 
 const Navber = () => {
   const {user,SignOutUser}=useContext(AuthContext)
-  console.log(user);
+  
+   const email=user?.email 
+  
   const handleSignOut=(e)=>{
    
     e.preventDefault();
@@ -21,7 +23,7 @@ isPending ? "pending" : isActive ? "text-red-800" : ""
     <li className="hover:bg-red-200 rounded-lg"><NavLink to='/addProduct' className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "text-red-800" : ""
 }>Add Product</NavLink></li>
-    <li className="hover:bg-red-200 rounded-lg"><NavLink to='/myCart' className={({ isActive, isPending }) =>
+    <li className="hover:bg-red-200 rounded-lg"><NavLink to={`/myCart/${email}` }className={({ isActive, isPending }) =>
 isPending ? "pending" : isActive ? "text-red-800" : ""
 }>Cart</NavLink></li>
 </>
