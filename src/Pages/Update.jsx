@@ -17,7 +17,7 @@ const Update = () => {
         const des=e.target.des.value;
         const newProduct={name,brandName,img,type,price,rating,des}
        
-        fetch(`http://localhost:5000/products/${_id}`,{
+        fetch(`https://server-site-kqfkuzq5h-sumaiyas-projects.vercel.app/products/${_id}`,{
             method:'PUT',
             headers: {
                 "Content-Type": "application/json",

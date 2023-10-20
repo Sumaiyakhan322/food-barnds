@@ -26,7 +26,7 @@ const Details = () => {
   const email=user.email;
   const usersAdd={name,brandName,img,type,price,rating,des,email}
     const handleAdd=()=>{
-      fetch('http://localhost:5000/usersProducts/',{
+      fetch('https://server-site-kqfkuzq5h-sumaiyas-projects.vercel.app/usersProducts/',{
         method:'POST',
         headers: {
             "Content-Type": "application/json",

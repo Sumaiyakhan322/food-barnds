@@ -15,7 +15,7 @@ const AddProduct = () => {
         const des=e.target.des.value;
         const newProduct={name,brandName,img,type,price,rating,des}
         console.log(newProduct);
-        fetch('http://localhost:5000/products',{
+        fetch('https://server-site-kqfkuzq5h-sumaiyas-projects.vercel.app/products',{
             method:'POST',
             headers: {
                 "Content-Type": "application/json",

@@ -33,11 +33,11 @@ const router = createBrowserRouter([
       },{
         path:'/myCart/:email',
         element:<Private><MyCart></MyCart></Private>,
-        loader:()=>fetch('http://localhost:5000/usersProducts')
+        loader:()=>fetch('https://server-site-kqfkuzq5h-sumaiyas-projects.vercel.app/usersProducts')
       },{
         path:'/brands/:brandName',
         element:<AllBrandsProducts></AllBrandsProducts>,
-        loader:()=>fetch('http://localhost:5000/products')
+        loader:()=>fetch('https://server-site-kqfkuzq5h-sumaiyas-projects.vercel.app/products')
         
       },{
         path:'/login',
@@ -48,11 +48,11 @@ const router = createBrowserRouter([
       },{
         path:'/details/:id',
         element:<Private><Details></Details></Private>,
-        loader:()=>fetch('http://localhost:5000/products')
+        loader:()=>fetch('https://server-site-kqfkuzq5h-sumaiyas-projects.vercel.app/products')
       },{
         path:'/update/:id',
         element:<Private><Update></Update></Private>,
-        loader:({params})=>fetch(`http://localhost:5000/products/${params.id}`)
+        loader:({params})=>fetch(`https://server-site-kqfkuzq5h-sumaiyas-projects.vercel.app/products/${params.id}`)
       }
     ]
   },
