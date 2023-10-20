@@ -29,7 +29,7 @@ const MyCart = () => {
   const handleDelete = (_id) => {
     console.log(_id);
     Swal.fire({
-      title: "Are you sure?",
+      title: "Are you sure to delete the product?",
       text: "You won't be able to revert this!",
       icon: "warning",
       showCancelButton: true,
@@ -45,7 +45,7 @@ const MyCart = () => {
           .then((data) => {
             console.log(data);
             if (data.deletedCount > 0) {
-              Swal.fire("Deleted!", "Your file has been deleted.", "success");
+              Swal.fire("Deleted!", "Your Product has been deleted.", "success");
             }
            const remaining=Cartproducts.filter(pd=>pd._id!==_id)
            setCartProducts(remaining)
@@ -94,7 +94,7 @@ const MyCart = () => {
                     Delete
                   </button>
 
-                  <button></button>
+                
                 </div>
               </div>
             </div>
@@ -104,9 +104,9 @@ const MyCart = () => {
         {noCartProduct && (
           <div className="my-20 text-center font-bold md:text-3xl text-xl space-y-6 max-w-6xl mx-auto p-4 md:p-0">
             <p>
-              {noCartProduct}: <span className=" text-red-900">{email}</span>
+              {noCartProduct}: <span className=" text-red-900 red">{email}</span>
             </p>
-            <h2>Please add product to cart: </h2>
+            <p>Please add product to cart: </p>
             <button className="btn  mx-auto block md:w-1/5 w-full border hover:border-red-900 my-10 text-red-900">
               <Link to="/">Add</Link>
             </button>

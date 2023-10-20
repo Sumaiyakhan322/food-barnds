@@ -109,7 +109,7 @@ const AllBrandsProducts = () => {
           <>
            
 
-            <div className="card lg:card-side bg-brown-50-50 shadow-xl  md:h-[360px]">
+            <div className="card lg:card-side bg-brown-50-50 shadow-xl  md:h-[360px] brands">
               <figure className=" md:w-5/12 w-full">
                 <img className=" h-[200px] md:h-full w-full"
                 src={pd.img}
@@ -117,7 +117,7 @@ const AllBrandsProducts = () => {
                 />
               </figure>
               <div className="card-body text-lg">
-                <h2 className=" text-xl">Name:<span className="font-bold text-red-900">{pd.name}</span></h2>
+                <h2 className=" text-xl">Name:<span className="font-bold text-red-900 brandName">{pd.name}</span></h2>
                 <p>Type:<span className="font-bold" >{pd.type}</span></p>
                 <p>Price:<span className="font-bold">{pd.price}$</span></p>
                 <p>Brand-Name:<span className="font-bold">{pd.brandName}</span></p>
@@ -136,7 +136,7 @@ const AllBrandsProducts = () => {
                 <div className="card-actions my-4 ">
                <Link to={`/update/${pd._id}`}><button className=" btn  border-red-900  border hover:border-red-900  text-red-900">Update</button></Link>   
                   <Link to={`/details/${pd._id}`}><button className="btn  border hover:border-red-900  text-red-900">Details </button></Link>
-                  <button></button>
+                  
                 </div>
               </div>
             </div>

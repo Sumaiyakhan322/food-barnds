@@ -10,6 +10,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Link } from 'react-router-dom';
+import '../../src/Styles/dark.css'
 
 const Banner = () => {
     return    (
@@ -41,7 +42,7 @@ const Banner = () => {
               Savor Iconic  <br /> Flavors 
             </h1>
 
-            <p className=' mb-10 w-full text-lg text-slate-200'>Explore a world of taste with our selection of renowned brands like Coca-Cola, McDonald`s, Starbucks, PepsiCo, Nestlé, and Kellogg`s. Indulge in the iconic flavors that have become household names. </p>
+            <p className=' mb-10 w-full text-lg text-slate-200 dark:text-white'>Explore a world of taste with our selection of renowned brands like Coca-Cola, McDonald`s, Starbucks, PepsiCo, Nestlé, and Kellogg`s. Indulge in the iconic flavors that have become household names. </p>
            
             <a className="mb-2 inline-block rounded-full border-2 border-red-400 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 md:mr-2 md:mb-0"
               data-te-ripple-init data-te-ripple-color="light" href="#!" role="button"  ><Link to='/register' >To Join us</Link></a>
