@@ -55,13 +55,13 @@ const Login = () => {
           <label className="label">
             <span className="label-text text-xl">Email:</span>
           </label>
-          <input type="email" placeholder="email" className="input input-bordered input-error text-black bg-white  " required  name='email'/>
+          <input type="email" placeholder="email" className="input login input-bordered input-error text-black bg-white  " required  name='email'/>
         </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text text-xl">Password:</span>
           </label>
-          <input type="password" placeholder="password" className="input input-bordered input-error text-black bg-white" name='password' required />
+          <input type="password" placeholder="password" className="input login input-bordered input-error text-black bg-white" name='password' required />
           
         </div>
         {error && <p className='text-red-500 '>{error}</p>}

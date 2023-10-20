@@ -47,5 +47,9 @@
 
   color: white;
 }
+[data-theme="dark"] .login {
+
+  color: rgb(0, 0, 0);
+}
 
  
