@@ -28,4 +28,16 @@
   background-color: rgb(80, 79, 79);
   color: rgb(65, 64, 64);
 }
+[data-theme="dark"] .dark-bg {
+  background-color: rgb(80, 79, 79);
+  color: rgb(65, 64, 64);
+}
+[data-theme="dark"] .dark-bg p {
+
+  color: rgb(231, 231, 231);
+}
+[data-theme="dark"] .dark-bg h5 {
+
+  color: rgb(255, 85, 85);
+}
 
