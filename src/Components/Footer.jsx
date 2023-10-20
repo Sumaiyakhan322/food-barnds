@@ -4,7 +4,7 @@ import logo from '../assets/logo.png'
 const Footer = () => {
     return (
         <div>
-            <footer className=" text-center bg-gradient-to-r from-stone-200 to-sky-100 lg:text-left">
+            <footer className=" text-center bg-base-300 lg:text-left">
         {/* <div className="max-w-3xl mx-auto flex items-center justify-center  p-6  lg:justify-between"> */}
           {/* <div className="mr-12 hidden lg:block">
             <span className="text-xl font-bold">
@@ -86,33 +86,33 @@ const Footer = () => {
             </div>
 
             <div className="text-center">
-              <h6 className="mb-4 text-xl font-bold uppercase md:justify-start text-center">
-                Useful links
+              <h6 className="mb-4 text-xl font-bold uppercase md:justify-start text-center text-red-900">
+                 Links
               </h6>
               <p className="mb-4">
-                <a href="#!" className="text-black">
+                <a href="#!" className="text-black footer-text ">
                   <Link to="/">Home</Link>
                 </a>
               </p>
               <p className="mb-4">
-                <a href="#!" className="text-black">
+                <a href="#!" className="text-black footer-text">
                   <Link to="/addProduct">Products</Link>
                 </a>
               </p>
               <p className="mb-4">
-                <a href="" className="text-black">
+                <a href="" className="text-black footer-text">
                   Orders
                 </a>
               </p>
               <p>
-                <a href="" className="text-black">
+                <a href="" className="text-black footer-text">
                   <Link to="">Service</Link>
                 </a>
               </p>
             </div>
 
             <div className="">
-              <h6 className="mb-4 text-xl font-bold  uppercase md:justify-start">
+              <h6 className="mb-4 text-xl font-bold  uppercase md:justify-start text-red-900">
                 Contact
               </h6>
               <p className="mb-4 flex items-center justify-center md:justify-start">

@@ -3,6 +3,7 @@ import { Link, useLoaderData, useParams } from "react-router-dom";
 import Navber from "../Components/Navber";
 
 import Swal from "sweetalert2";
+import Footer from "../Components/Footer";
 
 const MyCart = () => {
   const allProducts = useLoaderData();
@@ -113,6 +114,7 @@ const MyCart = () => {
           </div>
         )}
       </div>
+      <Footer></Footer>
     </div>
   );
 };

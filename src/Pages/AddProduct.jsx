@@ -1,6 +1,7 @@
 
 import Swal from 'sweetalert2'
 import Navber from '../Components/Navber';
+import Footer from '../Components/Footer';
 
 
 const AddProduct = () => {
@@ -130,7 +131,9 @@ const AddProduct = () => {
           
         </form>
       </div>
+     
     </div>
+    <Footer></Footer>
     </>
   );
 };

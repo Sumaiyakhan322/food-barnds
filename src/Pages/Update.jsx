@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
 import Navber from "../Components/Navber";
+import Footer from "../Components/Footer";
 
 
 const Update = () => {
@@ -120,6 +121,7 @@ const Update = () => {
         </form>
       </div>
     </div>
+    <Footer></Footer>
     </>
         </div>
     );

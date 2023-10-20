@@ -4,6 +4,7 @@ import Navber from "../Components/Navber";
 
 import Swal from 'sweetalert2'
 import { AuthContext } from "../Providers/AuthProvider";
+import Footer from "../Components/Footer";
 
 
 
@@ -76,7 +77,7 @@ const Details = () => {
   
 </div>
    </div>
- 
+ <Footer></Footer>
             </>
         )
     

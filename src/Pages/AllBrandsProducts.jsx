@@ -4,6 +4,8 @@ import img3 from "../assets/advertering3.jpg";
 import { useEffect, useState } from "react";
 import { Link, useLoaderData, useParams } from "react-router-dom";
 import { Carousel, Rating } from "@material-tailwind/react";
+import Navber from "../Components/Navber";
+import Footer from "../Components/Footer";
 
 const AllBrandsProducts = () => {
   const allBrands = useLoaderData();
@@ -25,6 +27,7 @@ const AllBrandsProducts = () => {
   return (
     <div>
       <div>
+        <Navber></Navber>
         <div>
           <Carousel
             transition={{ duration: 2 }}
@@ -154,6 +157,7 @@ const AllBrandsProducts = () => {
             </button>
           </div>
         )}
+        <Footer></Footer>
       </div>
     </div>
   );
