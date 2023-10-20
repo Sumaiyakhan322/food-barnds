@@ -40,33 +40,33 @@ const Login = () => {
         
       
     }
-
+    // style={{backgroundImage:`url(${backgroundImg})`}}
     return (
         <div>
-            <div className="hero min-h-screen" style={{backgroundImage:`url(${backgroundImg})`}}>
-        <div className="hero-overlay bg-opacity-70 bg-slate-500-300"></div>
-        <div className="hero-content text-center text-neutral-content w-full">
-          <div className="md:w-2/4 w-full">
+            <div className="flex justify-center" >
+     
+        <div className="hero-content text-center text-neutral-content w-full ">
+          <div className="md:w-2/4 w-full ">
             <h2 className='text-red-400 my-10 font-bold md:text-4xl text-2xl'>Please Log in </h2>
-          <div className='bg-base-100 rounded-3xl '>
+          <div className=' rounded-3xl '>
           <div className="card w-full  shadow-2xl  box ">
           <form className="card-body text-xl " onSubmit={handleLogIn}>
         <div className="form-control">
           <label className="label">
             <span className="label-text text-xl">Email:</span>
           </label>
-          <input type="email" placeholder="email" className="input input-bordered input-error text-black" required  name='email'/>
+          <input type="email" placeholder="email" className="input input-bordered input-error text-black bg-white  " required  name='email'/>
         </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text text-xl">Password:</span>
           </label>
-          <input type="password" placeholder="password" className="input input-bordered input-error text-black" name='password' required />
+          <input type="password" placeholder="password" className="input input-bordered input-error text-black bg-white" name='password' required />
           
         </div>
         {error && <p className='text-red-500 '>{error}</p>}
         <div className="form-control mt-6">
-          <button className="btn bg-gradient-to-r from-red-300 to-red-900  hover:bg-white hover:border hover:border-blue-400 ">Login</button>
+          <button className="btn bg-gradient-to-r from-red-300 to-red-900  hover:bg-white hover:border hover:border-red-400 ">Login</button>
         </div>
        <p className='text-black'>Do not have any account ? Go to <Link className='text-red-400 underline' to='/register'>Register</Link></p>
       </form>

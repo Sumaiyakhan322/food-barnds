@@ -51,8 +51,7 @@ const AllBrandsProducts = () => {
                   <p className="mb-5">
                   Explore a world of culinary wonders on our food and beverage brands website. From mouthwatering recipes to premium beverages, indulge in a symphony of flavors that will tantalize your taste buds
                   </p>
-                  <a className="mb-2 inline-block rounded-full border-2 border-red-400 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 md:mr-2 md:mb-0"
-              data-te-ripple-init data-te-ripple-color="light" href="#!" role="button"  ><Link to='/register' >To Join us</Link></a>
+              
                 </div>
               </div>
             </div>
@@ -72,8 +71,7 @@ const AllBrandsProducts = () => {
                   <p className="mb-5">
                   Craving something delicious? Our website is a treasure trove of food and beverage brands that offer a diverse range of gourmet goodies. Find your favorites and savor the convenience of online shopping.
                   </p>
-                  <a className="mb-2 inline-block rounded-full border-2 border-red-400 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 md:mr-2 md:mb-0"
-              data-te-ripple-init data-te-ripple-color="light" href="#!" role="button"  ><Link to='/register' >To Join us</Link></a>
+                 
                 </div>
               </div>
             </div>
@@ -93,8 +91,7 @@ const AllBrandsProducts = () => {
                   <p className="mb-5">
                   Elevate your dining experience with our curated selection of food and beverage brands. From artisanal treats to top-notch drinks, our website brings culinary excellence to your doorstep. Explore and elevate your taste journey today
                   </p>
-                  <a className="mb-2 inline-block rounded-full border-2 border-red-400 px-[46px] pt-[14px] pb-[12px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 md:mr-2 md:mb-0"
-              data-te-ripple-init data-te-ripple-color="light" href="#!" role="button"  ><Link to='/register' >To Join us</Link></a>
+                 
                 </div>
               </div>
             </div>

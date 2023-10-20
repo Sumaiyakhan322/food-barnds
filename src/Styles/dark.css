@@ -43,4 +43,9 @@
 
   color: rgb(255, 85, 85);
 }
+[data-theme="dark"] .addprod {
 
+  color: white;
+}
+
+ 
